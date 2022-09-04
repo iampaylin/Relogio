@@ -106,9 +106,12 @@ botaoClaro.addEventListener("click", () => {
 
     cima.style.backgroundColor = '#808080'
     cima.style.backgroundImage = 'none'
+    cima.style.height = '50vh'
 
     baixo.style.backgroundColor = '#f5f5f5'
     baixo.style.transition = '300ms'
+    baixo.style.height = '50vh'
+
 
     github.style.backgroundColor = '#808080'
     github.style.color = '#f5f5f5'
@@ -133,9 +136,12 @@ botaoEscuro.addEventListener("click", () => {
 
     cima.style.backgroundColor = '#808080'
     cima.style.backgroundImage = 'none'
+    cima.style.height = '50vh'
 
     baixo.style.backgroundColor = '#111'
     baixo.style.transition = '300ms'
+    baixo.style.height = '50vh'
+
 
     github.style.backgroundColor = '#f5f5f5'
     github.style.color = '#111'
@@ -161,10 +167,11 @@ botaoLondres.addEventListener("click", () => {
     cima.style.backgroundImage = 'url(imagens/london.jpg)'
     cima.style.backgroundSize = 'cover'
     cima.style.backgroundRepeat = 'no-repeat'
-    cima.style.height = '400px'
+    cima.style.height = '50vh'
 
     baixo.style.backgroundColor = '#808080'
     baixo.style.transition = '300ms'
+    baixo.style.height = '50vh'
 
     github.style.backgroundColor = '#4169e1'
     github.style.color = '#111'
