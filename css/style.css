@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F1F1ED;
+  font-family: "Saira", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container #cima {
+  width: 100%;
+  height: 50vh;
+  background-color: #353333;
+}
+.container #cima .botoes {
+  display: flex;
+  flex-direction: row;
+}
+.container #cima .claro {
+  background-color: #F1F1ED;
+  color: #0A0909;
+  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.6s ease;
+}
+.container #cima .claro:hover, .container #cima .escuro:hover {
+  box-shadow: none;
+  transition: 0.6s ease;
+}
+.container #cima .escuro {
+  background-color: #0A0909;
+  color: #F1F1ED;
+  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.6s ease;
+}
+.container #cima input {
+  width: 120px;
+  height: 40px;
+  font-family: "Righteous", cursive;
+  margin: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Saira", sans-serif;
+}
+.container #baixo {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 550px) {
+  .container #baixo {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
+.container #baixo .tempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container #baixo .tempo #rel {
+  color: #0A0909;
+  font-size: 96px;
+  margin: 0px 0px -20px 10px;
+}
+@media screen and (max-width: 550px) {
+  .container #baixo .tempo #rel {
+    font-size: 64px;
+    margin: 0px 0px -20px 5px;
+  }
+}
+.container #baixo .tempo #calendario {
+  color: #0A0909;
+  font-size: 24px;
+  margin: 0px 0px 10px 10px;
+}
+@media screen and (max-width: 550px) {
+  .container #baixo .tempo #calendario {
+    font-size: 18px;
+  }
+}
+.container #baixo .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 550px) {
+  .container #baixo .portfolio {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+.container #baixo .portfolio a {
+  margin: 0px 20px 10px 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 550px) {
+  .container #baixo .portfolio a {
+    margin: 0px 0px 0px 10px;
+  }
+}
+.container #baixo .portfolio a button {
+  width: 120px;
+  height: 40px;
+  background-color: #0A0909;
+  color: #F1F1ED;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  font-family: "Saira", sans-serif;
+  transition: 0.6s ease;
+}
+.container #baixo .portfolio a button:hover {
+  border: 2px solid #353333;
+  background-color: #F1F1ED;
+  color: #0A0909;
+}
+.container #baixo .portfolio a button .separar {
+  margin: 0px 5px 0px 0px;
+}/*# sourceMappingURL=style.css.map */
