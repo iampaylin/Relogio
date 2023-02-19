@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin mobile () {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
+
+@import "./partials/colors";
+
+body {
+    background-color: $principal-white;
+    font-family: 'Saira', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    #cima {
+        width: 100%;
+        height: 50vh;
+        background-color: $principal-gray;
+
+        .botoes {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .claro {
+            background-color: $principal-white;
+            color: $principal-black;
+            box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+            transition: .6s ease;
+        }
+        
+        .claro:hover, .escuro:hover {
+            box-shadow: none;
+            transition: .6s ease;
+        }
+        
+        .escuro {
+            background-color: $principal-black;
+            color: $principal-white;
+            box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+            transition: .6s ease;
+        }
+        
+        input {
+            width: 120px;
+            height: 40px;
+            font-family: 'Righteous', cursive;
+            margin: 10px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Saira', sans-serif;
+        }
+    }
+    
+    #baixo {
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+        }
+
+        .tempo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            #rel {
+                color: $principal-black;
+                font-size: 96px;
+                margin: 0px 0px -20px 10px;
+
+                @include mobile {
+                    font-size: 64px;
+                    margin: 0px 0px -20px 5px;
+                }
+            }
+            
+            #calendario {
+                color: $principal-black;
+                font-size: 24px;
+                margin: 0px 0px 10px 10px;
+
+                @include mobile {
+                    font-size: 18px;
+                }
+            }
+        }
+        
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            @include mobile {
+                justify-content: flex-start;
+                flex-direction: row;
+            }
+
+            a {
+                margin: 0px 20px 10px 10px;
+                text-decoration: none;
+
+                @include mobile {
+                    margin: 0px 0px 0px 10px;
+                }
+    
+                button {
+                    width: 120px;
+                    height: 40px;
+                    background-color: $principal-black;
+                    color: $principal-white;
+                    border: 2px solid $principal-gray;
+                    border-radius: 5px;
+                    font-family: 'Saira', sans-serif;
+                    transition: 0.6s ease;
+
+                    &:hover {
+                        border: 2px solid #353333;
+                        background-color: $principal-white;
+                        color: $principal-black;
+                    }
+                    
+                    .separar {
+                        margin: 0px 5px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

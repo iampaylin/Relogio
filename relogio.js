@@ -94,7 +94,7 @@ function tempo(){
 
 let cima = document.getElementById("cima")
 let baixo = document.getElementById("baixo")
-let port = document.querySelectorAll("a")
+let port = document.querySelectorAll("button")
 let github = port.item(0)
 let linkedin = port.item(1)
 
@@ -113,13 +113,13 @@ botaoClaro.addEventListener("click", () => {
     baixo.style.height = '50vh'
 
 
-    github.style.backgroundColor = '#808080'
+    /* github.style.backgroundColor = '#808080'
     github.style.color = '#f5f5f5'
     github.style.transition = '300ms'
 
     linkedin.style.backgroundColor = '#808080'
     linkedin.style.color = '#f5f5f5'
-    linkedin.style.transition = '300ms'
+    linkedin.style.transition = '300ms' */
 
     relogio.style.color = "#111"
     relogio.style.transition = "300ms"
@@ -131,60 +131,31 @@ botaoClaro.addEventListener("click", () => {
 let botaoEscuro = document.querySelector(".escuro")
 botaoEscuro.addEventListener("click", () => {
 
-    document.body.style.backgroundColor = '#111'
+    document.body.style.backgroundColor = '#0A0909'
     document.body.style.transition = '300ms'
 
-    cima.style.backgroundColor = '#808080'
+    cima.style.backgroundColor = '#353333'
     cima.style.backgroundImage = 'none'
     cima.style.height = '50vh'
 
-    baixo.style.backgroundColor = '#111'
+    baixo.style.backgroundColor = '#0A0909'
     baixo.style.transition = '300ms'
     baixo.style.height = '50vh'
 
 
-    github.style.backgroundColor = '#f5f5f5'
-    github.style.color = '#111'
-    github.style.transition = '300ms'
+    /* github.style.backgroundColor = '#F1F1ED'
+    github.style.color = '#0A0909'
+    github.style.transition = '0.6s ease'
 
-    linkedin.style.backgroundColor = '#f5f5f5'
-    linkedin.style.color = '#111'
-    linkedin.style.transition = '300ms'
+    linkedin.style.backgroundColor = '#F1F1ED'
+    linkedin.style.color = '#0A0909'
+    linkedin.style.transition = '0.6s ease' */
 
-    relogio.style.color = "#f5f5f5"
+    relogio.style.color = "#F1F1ED"
     relogio.style.transition = "300ms"
-    calendario.style.color = "#f5f5f5"
+    calendario.style.color = "#F1F1ED"
     calendario.style.transition = "300ms"
 
-})
-
-let botaoLondres = document.querySelector(".londres")
-botaoLondres.addEventListener("click", () => {
-    document.body.style.backgroundColor = '#808080'
-    document.body.style.transition = '300ms'
-
-    cima.style.backgroundColor = 'none'
-    cima.style.backgroundImage = 'url(imagens/london.jpg)'
-    cima.style.backgroundSize = 'cover'
-    cima.style.backgroundRepeat = 'no-repeat'
-    cima.style.height = '50vh'
-
-    baixo.style.backgroundColor = '#808080'
-    baixo.style.transition = '300ms'
-    baixo.style.height = '50vh'
-
-    github.style.backgroundColor = '#4169e1'
-    github.style.color = '#111'
-    github.style.transition = '300ms'
-
-    linkedin.style.backgroundColor = '#4169e1'
-    linkedin.style.color = '#111'
-    linkedin.style.transition = '300ms'
-
-    relogio.style.color = "#111"
-    relogio.style.transition = "300ms"
-    calendario.style.color = "#111"
-    calendario.style.transition = "300ms"
 })
 
 
