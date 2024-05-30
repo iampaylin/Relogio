@@ -53,6 +53,7 @@ body {
         input {
             width: 120px;
             height: 40px;
+
             font-family: 'Righteous', cursive;
             margin: 10px 10px;
             border: none;
@@ -69,8 +70,8 @@ body {
         justify-content: space-between;
 
         @include mobile {
-            flex-direction: column-reverse;
-            justify-content: flex-start;
+            flex-direction: column;
+            justify-content: flex-end;
         }
 
         .tempo {
@@ -115,17 +116,20 @@ body {
                 text-decoration: none;
 
                 @include mobile {
-                    margin: 0px 0px 0px 10px;
+                    margin: 0px 0px 10px 10px;
                 }
     
                 button {
                     width: 120px;
                     height: 40px;
+
                     background-color: $principal-black;
                     color: $principal-white;
                     border: 2px solid $principal-gray;
                     border-radius: 5px;
+                    
                     font-family: 'Saira', sans-serif;
+                    font-size: medium;
                     transition: 0.6s ease;
 
                     &:hover {
