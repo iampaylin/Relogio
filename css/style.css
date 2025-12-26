@@ -4,124 +4,56 @@
 }
 
 body {
-  background-color: #F1F1ED;
-  font-family: "Saira", sans-serif;
+  background-color: #f1f1ed;
+  font-family: "Exo", sans-serif;
 }
 
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
-.container #cima {
-  width: 100%;
-  height: 50vh;
-  background-color: #353333;
+.container #rel {
+  font-size: 120px;
+  color: #0a0909;
 }
-.container #cima .botoes {
+@media screen and (max-width: 550px) {
+  .container #rel {
+    font-size: 55px;
+  }
+}
+.container #calendario {
+  font-size: 18px;
+  color: #0a0909;
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .container #calendario {
+    font-size: 14px;
+  }
+}
+.container .links {
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
+  gap: 15px;
 }
-.container #cima .claro {
-  background-color: #F1F1ED;
-  color: #0A0909;
-  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.3);
-  transition: 0.6s ease;
-}
-.container #cima .claro:hover, .container #cima .escuro:hover {
-  box-shadow: none;
-  transition: 0.6s ease;
-}
-.container #cima .escuro {
-  background-color: #0A0909;
-  color: #F1F1ED;
-  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.3);
-  transition: 0.6s ease;
-}
-.container #cima input {
-  width: 120px;
-  height: 40px;
-  font-family: "Righteous", cursive;
-  margin: 10px 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-family: "Saira", sans-serif;
-}
-.container #baixo {
-  height: 50vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media screen and (max-width: 550px) {
-  .container #baixo {
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-}
-.container #baixo .tempo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.container #baixo .tempo #rel {
-  color: #0A0909;
-  font-size: 96px;
-  margin: 0px 0px -20px 10px;
-}
-@media screen and (max-width: 550px) {
-  .container #baixo .tempo #rel {
-    font-size: 64px;
-    margin: 0px 0px -20px 5px;
-  }
-}
-.container #baixo .tempo #calendario {
-  color: #0A0909;
-  font-size: 24px;
-  margin: 0px 0px 10px 10px;
-}
-@media screen and (max-width: 550px) {
-  .container #baixo .tempo #calendario {
-    font-size: 18px;
-  }
-}
-.container #baixo .portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-@media screen and (max-width: 550px) {
-  .container #baixo .portfolio {
-    justify-content: flex-start;
-    flex-direction: row;
-  }
-}
-.container #baixo .portfolio a {
-  margin: 0px 20px 10px 10px;
+.container .links a {
   text-decoration: none;
+  color: #0a0909;
+  font-weight: 600;
+  font-size: 32px;
+  transition: 0.5s ease;
 }
-@media screen and (max-width: 550px) {
-  .container #baixo .portfolio a {
-    margin: 0px 0px 10px 10px;
-  }
+.container .links a:hover {
+  transition: 0.5s ease;
+  color: #a80000;
 }
-.container #baixo .portfolio a button {
-  width: 120px;
-  height: 40px;
-  background-color: #0A0909;
-  color: #F1F1ED;
-  border: 2px solid #353333;
-  border-radius: 5px;
-  font-family: "Saira", sans-serif;
-  font-size: medium;
-  transition: 0.6s ease;
-}
-.container #baixo .portfolio a button:hover {
-  border: 2px solid #353333;
-  background-color: #F1F1ED;
-  color: #0A0909;
-}
-.container #baixo .portfolio a button .separar {
-  margin: 0px 5px 0px 0px;
-}/*# sourceMappingURL=style.css.map */
+
+/* @include mobile {
+      flex-direction: column;
+      justify-content: flex-end;
+    } *//*# sourceMappingURL=style.css.map */

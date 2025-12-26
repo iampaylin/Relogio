@@ -63,7 +63,7 @@ let relogio = document.getElementById('rel')
 window.addEventListener("load", tempo)
 
 
-function tempo(){
+function tempo() {
     let data = new Date()
     let hora = data.getHours()
     let minutos = data.getMinutes()
@@ -90,8 +90,7 @@ function tempo(){
     setTimeout(tempo, 1000);
 }
 
-// temas
-
+/* temas
 let cima = document.getElementById("cima")
 let baixo = document.getElementById("baixo")
 let port = document.querySelectorAll("button")
@@ -113,18 +112,18 @@ botaoClaro.addEventListener("click", () => {
     baixo.style.height = '50vh'
 
 
-    /* github.style.backgroundColor = '#808080'
+    github.style.backgroundColor = '#808080'
     github.style.color = '#f5f5f5'
     github.style.transition = '300ms'
 
     linkedin.style.backgroundColor = '#808080'
     linkedin.style.color = '#f5f5f5'
-    linkedin.style.transition = '300ms' */
+    linkedin.style.transition = '300ms' 
 
-    relogio.style.color = "#111"
-    relogio.style.transition = "300ms"
-    calendario.style.color = "#111"
-    calendario.style.transition = "300ms"
+relogio.style.color = "#111"
+relogio.style.transition = "300ms"
+calendario.style.color = "#111"
+calendario.style.transition = "300ms"
 
 })
 
@@ -142,21 +141,20 @@ botaoEscuro.addEventListener("click", () => {
     baixo.style.transition = '300ms'
     baixo.style.height = '50vh'
 
-
-    /* github.style.backgroundColor = '#F1F1ED'
+    github.style.backgroundColor = '#F1F1ED'
     github.style.color = '#0A0909'
     github.style.transition = '0.6s ease'
 
     linkedin.style.backgroundColor = '#F1F1ED'
     linkedin.style.color = '#0A0909'
-    linkedin.style.transition = '0.6s ease' */
+    linkedin.style.transition = '0.6s ease'
 
     relogio.style.color = "#F1F1ED"
     relogio.style.transition = "300ms"
     calendario.style.color = "#F1F1ED"
     calendario.style.transition = "300ms"
 
-})
+}) */
 
 
 
